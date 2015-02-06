@@ -30,3 +30,7 @@ for element in elements:
 out_file = open("affinity_side_sorted.xml","w")
 dom2.writexml(out_file)
 out_file.close()
+
+os.system("cp affinity_side.xml affinity_side.bkp")
+os.system("cp affinity_side_sorted.xml affinity_side.xml")
+os.system("rm affinity_side_sorted.xml")
