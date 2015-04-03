@@ -16,8 +16,11 @@ for directory in directories:
         newtitle = searched.group(1)
         audiofile = eyed3.load(file)
         print 'new:', file
-        #print 'old: ', basename, '; title:', audiofile.tag.title
+        # print 'old: ', basename, '; title:', audiofile.tag.title
         audiofile.tag.title = newtitle.decode('unicode-escape')
         audiofile.tag.album = u'traditional chinese'
         print 'title:', audiofile.tag.title
         audiofile.tag.save()
+
+
+ iladad
